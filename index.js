@@ -25,6 +25,7 @@ function countdown(a , targetElementIdEl){
 
 function handleSunlightBtnClick(e){
     if(e.target.parentNode.parentNode.children[0].id == 'countdown' ){
+        console.log(e.target.parentNode.parentNode.parentNode.children[0])
         let targetElementId = e.target.parentNode.parentNode.children[0].id
         let targetElementIdEl = document.getElementById(`${targetElementId}`)
         countdownEl.innerHTML = "00:00"
@@ -73,5 +74,27 @@ document.addEventListener('click', (e)=>{
     else if(e.target.textContent == 'stop'){
         handleStopBtnClick(e)
     }
-
 })
+
+function handleSunpaImg(){
+   let sunpaImgEl = document.getElementById('sunpa-img')
+    
+   let sunGiphyImgDiv = document.createElement('div')
+   sunGiphyImgDiv.classList.add('sunGiphyImgDiv')
+
+   let parent = document.getElementById('container')
+   sunpaImgEl = parent.replaceChild(sunGiphyImgDiv,sunpaImgEl)
+}
+
+setInterval(() => handleSunpaImg(),2000)
+
+//API's
+let random = Math.random()
+let randomNumber = Math.floor(random * 13)
+console.log(randomNumber)
+fetch("https://type.fit/api/quotes")
+    .then(res => res.json())
+    .then(data => {
+        console.log(document.getElementById('quote').textContent = data[randomNumber].text)
+    })
+

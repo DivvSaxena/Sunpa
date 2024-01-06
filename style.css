@@ -82,7 +82,9 @@ html, body {
     width: 305px;
     height: 88px;
     margin: 1em 0 0 0;
-    
+    padding: 1em;
+    display: flex;
+    align-items: center;
 }
 
 .line-three
@@ -104,4 +106,19 @@ html, body {
 
 .stop-btn{
     font-size: 2rem;
+}
+
+#quote{
+    color: black;
+    margin: 0;
+}
+
+.sunGiphyImgDiv{
+    width: 200px;
+    height: 200px;
+    margin-top: 1em;
+    background: url("https://media.giphy.com/media/nYiHd4Mh3w6fS/giphy.gif");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid wheat;
 }
