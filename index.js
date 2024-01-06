@@ -86,7 +86,7 @@ function handleSunpaImg(){
    sunpaImgEl = parent.replaceChild(sunGiphyImgDiv,sunpaImgEl)
 }
 
-setInterval(() => handleSunpaImg(),4000)
+setInterval(() => handleSunpaImg(),2400)
 
 //API's
 let random = Math.random()
