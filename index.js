@@ -15,7 +15,7 @@ function countdown(a , targetElementIdEl){
                     targetElementIdEl.innerHTML = min+ ":" +sec  
                 }
                 else{
-                    targetElementIdEl.textContent = "Times up"
+                    targetElementIdEl.textContent = "Wohoo!"
                     clearInterval(timer)
                 }            
             }
