@@ -98,3 +98,6 @@ fetch("https://type.fit/api/quotes")
         console.log(document.getElementById('quote').textContent = data[randomNumber].text)
     })
 
+
+calender c = Calender.getInstance()
+console.log(c)

@@ -18,6 +18,7 @@ html, body {
     text-align: center;
     color: #FFFFFF;  
     font-family: Bangers ,sans-serif;
+    border: 2px solid wheat;
 }
 
 .container img{
@@ -120,5 +121,6 @@ html, body {
     background: url("https://media.giphy.com/media/nYiHd4Mh3w6fS/giphy.gif");
     background-size: cover;
     background-position: center;
+    border-radius: 50%;
     border: 2px solid wheat;
 }
